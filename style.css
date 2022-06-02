@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+
+body{
+    padding: 0;
+    margin: 0%;
+    font-family: 'roboto conensed', sans-serif;
+    background: purple;
+}
+.Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    overflow: hidden; 
+}
+.imgbox{
+    transition: 0.5s;
+
+}
+.imgbox img{
+    transition: 0.5s;
+    width: 300px;
+    height: 400px;
+}
+.Container:hover .imgbox img{
+    opacity: 0.6;
+    transition: 1.5s;
+    transform: scale(1.05);
+}
+.Social{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.Social li{
+    list-style: none;
+}
+.Social li a{
+    display: block;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+     font-size: 20px;
+     color: #34495e;
+     margin: 0 5px;
+     text-align: center;
+     border-radius: 50%;
+     transform: translateY(200px);
+    
+}
+.Container:hover .Social li a{
+    transform: translateY(140px);
+    opacity: 1;
+}
+.Container .Social li a:hover i{
+    transition: 08s;
+    color: red;
+    transform: rotateY(360deg);
+}
+.Container:hover .Social li:nth-child(1) a{
+    transition-delay: 0s;
+}
+.Container:hover .Social li:nth-child(2) a{
+    transition-delay: 0.2s;
+}
+.Container:hover .Social li:nth-child(3) a{
+    transition-delay: 04s;
+}
+.Container:hover .Social li:nth-child(4) a{
+    transition-delay: 0.6s;
+}
+.Container:hover .Social li:nth-child(5) a{
+    transition-delay: 0.8s;
+}
+.Details{
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px -2px 30px -2px rgba(0,0,0,0.75);
+}
+.Details h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin: 6px 0 0;
+    color: crimson;
+}
+.Details span{
+    font-size: 14px;
+    font-weight: 400;
+    color: green;
+}
